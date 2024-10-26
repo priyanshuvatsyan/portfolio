@@ -194,7 +194,8 @@ body {
 }
 
 .contact-image {
-  width: 100%; /* Responsive image */
+  width: 150%;
+  margin-left: -70%; /* Responsive image */
   border-radius: 10px;
 }
 
