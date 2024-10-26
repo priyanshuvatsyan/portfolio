@@ -1,5 +1,5 @@
 .floating-image {
-    width: 50vh; /* Adjust image size */
+    width: 40vh; /* Adjust image size */
     animation: float 3s ease-in-out infinite; /* Apply floating animation */
   /*   border: 2px solid black;
     margin-left: -20%; */

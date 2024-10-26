@@ -35,7 +35,7 @@
 
 
 .about-container {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     max-width: 1000px;
@@ -72,7 +72,7 @@
 .logos-container {
     display: flex;
     gap: 15px;
-    margin-top: -40px;
+    margin-top: 20px !important;
     align-items: center;
     justify-content: flex-start;
   }
@@ -166,3 +166,67 @@
     color: rgb(0, 28, 85);
     transition: color 0.3s;
   }
+  /* Existing styles... */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack image and education side vertically */
+    align-items: center; /* Center items */
+    margin-top: 10%; /* Adjust top margin */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+.logos-container{
+  margin-top: 20px;
+  margin-left: 120px;
+}
+  .image-side, .education-side {
+    flex: none; /* Prevent flex-grow */
+    width: 100%; /* Take full width */
+    text-align: center; /* Center text */
+  }
+
+  .profile-image {
+    max-width: 80%; /* Scale image down for mobile */
+    margin-bottom: 20px; /* Space below image */
+  }
+
+  .education-side h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .education-side p {
+    font-size: 2rem; /* Adjust paragraph size */
+  }
+
+  .degree-section {
+    width: 90%; /* Full width for degree section */
+    padding: 15px; /* Adjust padding */
+    height: 50vh;
+  }
+
+  .degree-details {
+    width: 100%; /* Full width for degree details */
+    padding: 15px; /* Adjust padding */
+    height: 20vh;
+    margin-left: -19px;
+  }
+
+  .degree {
+    font-size: 2rem; /* Adjust degree title size */
+  }
+
+  .degree-section h2 {
+    font-size: 1.8rem; /* Adjust university name size */
+  }
+
+  .degree-section h3 {
+    font-size: 1.4rem; /* Adjust degree information size */
+  }
+
+  .degree-section p {
+    font-size: 1rem; /* Adjust description size */
+    margin-left: 35px;
+  }
+
+}

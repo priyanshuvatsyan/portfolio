@@ -1,68 +1,286 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.background {
+  background: linear-gradient(9deg, rgba(211, 228, 235, 1) 2%, rgba(255, 255, 255, 1) 83%);
+  min-height: calc(100vh - 60px);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px; /* Minimum width for the image side */
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.education-side {
+  flex: 1;
+  color: rgb(0, 28, 85);
+}
+
+.education-side h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.education-side p {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.logos-container {
+  display: flex;
+  gap: 15px;
+  margin-top: -40px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.leetcode {
+  margin-left: 0px;
+}
+
+.gfg {
+  margin-left: 20px;
+}
+
+.degree-section {
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.degree-details {
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  width: 62vw;
+  height: auto; /* Change to auto for better responsiveness */
+  padding: 20px 30px;
+}
+
+.details {
+  color: #003366;
+  background-color: #c8ddf3;
+  width: 60vw;
+  height: auto; /* Change to auto for better responsiveness */
+}
+
+.degree-section .degree {
+  font-size: 4rem !important;
+  color: #003366;
+}
+
+.degree-section h2 {
+  font-size: 2rem;
+}
+
+.degree-section h3 {
+  font-size: 1.5rem;
+}
+
+.degree-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.bottom-nav a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.bottom-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  color: rgb(0, 28, 85);
+  transition: color 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Reduce gap */
+  }
+
+  .degree-details {
+    width: 90vw; /* Full width for small screens */
+  }
+
+  .profile-image {
+    max-width: 100%; /* Ensure image is fully responsive */
+  }
+
+  .education-side h1 {
+    font-size: 2.5rem; /* Reduce font size */
+  }
+
+  .education-side p {
+    font-size: 2rem; /* Reduce font size */
+  }
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10%;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px; /* Minimum width for the image side */
+}
+
+.contact-image {
+  width: 100%; /* Responsive image */
+  border-radius: 10px;
+}
+
+.text-side {
+  flex: 1;
+  color: rgb(0, 28, 85);
+  padding-left: 20px;
+}
+
+.contact-title {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.availability-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button,
+.resume-button {
+  background-color: #25D366; /* WhatsApp color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.whatsapp-button a,
+.resume-button a {
+  color: aliceblue;
+  text-decoration: none; /* Ensure no underline on links */
+}
+
+.whatsapp-button:hover,
+.resume-button:hover {
+  opacity: 0.8;
+}
+
+.contact-header {
+  font-size: 2.5rem;
+  margin-top: 10%;
+}
+
+.contact-number {
+  font-size: 1.5rem;
+}
+
+.bottom-nav {
+  margin-top: 10%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .contact-container {
-    display: flex;
-    align-items: center; /* Center vertically */
-    max-width: 1000px; /* Limit max width */
-    width: 100%; /* Full width */
-    padding: 20px; /* Padding around the container */
-    margin-top: 10%;
+
+    flex-direction: column; /* Stack elements vertically */
   }
-  
-  .image-side {
-    flex: 1; /* Take up half the space */
-  }
-  
+
   .contact-image {
-    margin-left: -320px;
-    width: 150%; /* Responsive image */
-  
-    border-radius: 10px; /* Rounded corners */
+    margin-top: 15% !important;
+    width: 100%; /* Full width for the image */
   }
-  
+.whatsapp-button{
+  margin-bottom: 20px;
+}
   .text-side {
-    flex: 1; /* Take up half the space */
-    color: rgb(0, 28, 85); /* Set text color */
-    padding-left: 20px; /* Space between image and text */
+    padding-left: 0; /* Remove padding on small screens */
   }
-  
+
   .contact-title {
-    font-size: 4rem; /* Title size */
-    margin-bottom: 15px; /* Space below title */
+    font-size: 3rem; /* Reduce font size */
   }
-  
+
   .availability-text {
-    font-size: 1.5rem; /* Availability text size */
-    margin-bottom: 20px; /* Space below availability text */
+    font-size: 1.2rem; /* Reduce font size */
   }
-  
-  .whatsapp-button,
-  .resume-button {
-    background-color: #25D366; /* WhatsApp color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for button */
-    font-size: 1rem; /* Button font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-right: 10px; /* Space between buttons */
-  }
-  .whatsapp-button,
-  .resume-button a{
-    color: aliceblue;
-  }
-  .whatsapp-button:hover,
-  .resume-button:hover {
-    opacity: 0.8; /* Slight transparency on hover */
-  }
-  
+
   .contact-header {
-    font-size: 2.5rem; /* Contact header size */
-    margin-top: 10%; /* Space above contact header */
+    font-size: 2rem; /* Reduce font size */
   }
-  
+
   .contact-number {
-    font-size: 1.5rem; /* Contact number size */
+    font-size: 1.2rem; /* Reduce font size */
   }
-  .bottom-nav{
-    margin-top: 10%;
-  }
+}

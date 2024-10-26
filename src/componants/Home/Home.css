@@ -217,12 +217,22 @@
     align-items: center;
     text-align: center;
     margin-top: 20%;
+
+
+  }
+  .bottom-nav{
+    flex-direction: row !important;
+   display: none !important ;
   }
 
-  .text-content,
-  .image-content {
+  .text-content
+{
     margin: 0; /* Reset margin */
     width: 100%; /* Full width for responsive layout */
+  }
+  .image-content{
+    margin: 0;
+  width: 20vw !important;
   }
 
   .text-content h2 {
@@ -274,7 +284,7 @@
 /* Small devices (mobile phones, 576px and down) */
 @media (max-width: 576px) {
   .content{
-    margin-top: 250% !important;
+    margin-top: 25% !important;
    
     
   }

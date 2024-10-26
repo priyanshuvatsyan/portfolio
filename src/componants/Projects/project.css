@@ -1,74 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    height: 100vh;
-  }
-  html, body {
-    overflow-y: scroll;
-  }
-  
-  html::-webkit-scrollbar, body::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* For Firefox */
-  html {
-    scrollbar-width: none;
-  }
-  
-  
-  .background {
-    background: linear-gradient(9deg, rgba(211, 228, 235, 1) 2%, rgba(255, 255, 255, 1) 83%);
-    min-height: calc(100vh - 60px);
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  .project-container {
-    display: flex; /* Use flexbox to arrange children side by side */
-    justify-content: space-between; /* Space between the two divs */
-    align-items: center; /* Center items vertically */
-    margin-top: 40%;
-  }
-  
-  .image-container {
-    flex: 1; /* Allow the image container to take up available space */
-    margin-right: 20px; /* Add some space between the two divs */
-  }
-  
-  .project-image {
-    width: 70%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 110px;
-  }
-  
-  .text-container {
-    flex: 1; /* Allow the text container to take up available space */
-  }
-  
-  .text-container h1{
-    color: rgb(0, 28, 85); 
-    font-size: 4rem;
-    margin-top: -12%;
-    margin-bottom: 20px;
-  }
-  .text-container p{
-    font-size: 1.1rem;
-    color: rgb(0, 28, 85);
-    opacity: 0.7; /* Lower opacity */
-  }
-  
-  /* Projects Grid */
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+html, body {
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+.background {
+  background: linear-gradient(9deg, rgba(211, 228, 235, 1) 2%, rgba(255, 255, 255, 1) 83%);
+  min-height: calc(100vh - 60px);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-container {
+  display: flex; /* Use flexbox to arrange children side by side */
+  justify-content: space-between; /* Space between the two divs */
+  align-items: center; /* Center items vertically */
+  margin-top: 10%; /* Change margin-top to be more responsive */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.image-container {
+  flex: 1; /* Allow the image container to take up available space */
+  margin-right: 20px; /* Add some space between the two divs */
+  min-width: 250px; /* Ensure a minimum width */
+}
+
+.project-image {
+  width: 70%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-container {
+  flex: 1; /* Allow the text container to take up available space */
+  min-width: 250px; /* Ensure a minimum width */
+}
+
+.text-container h1 {
+  color: rgb(0, 28, 85);
+  font-size: 4rem;
+  margin-top: -12%;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  color: rgb(0, 28, 85);
+  opacity: 0.7; /* Lower opacity */
+}
+
+/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
@@ -112,42 +114,6 @@
 .project-card a:hover {
   text-decoration: underline;
 }
-.projects-grid, .clients-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjusts the number of columns per row */
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 40px;
-}
-
-.project-card, .client-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.project-card h3, .client-card h3 {
-  font-size: 1.3rem;
-  color: rgb(0, 28, 85);
-  margin-bottom: 10px;
-}
-
-.project-card p, .client-card p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: rgb(0, 28, 85);
-  text-decoration: none;
-  font-weight: bold;
-}
-
 
 .clients-heading {
   font-size: 1.3rem;
@@ -156,16 +122,16 @@
   text-align: center;
 }
 
-.projects-grid, .clients-grid {
+.clients-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   gap: 20px;
-  width: 100%;
+  width: 20%;
   max-width: 1200px;
   margin-top: 40px;
 }
 
-.project-card, .client-card {
+.client-card {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
@@ -173,21 +139,57 @@
   text-align: center;
 }
 
-.project-card h3, .client-card h3 {
+.client-card h3 {
   font-size: 1.3rem;
   color: rgb(0, 28, 85);
   margin-bottom: 10px;
 }
 
-.project-card p, .client-card p {
+.client-card p {
   font-size: 1rem;
   color: #555;
 }
 
-.project-card a {
+.client-card a {
   display: inline-block;
   margin-top: 10px;
   color: rgb(0, 28, 85);
   text-decoration: none;
   font-weight: bold;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.bottom-icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .project-container{
+    margin-top: 20%;
+   margin-left: 20px;
+margin-right: 20px;
+   text-align: center;
+  }
+  .text-container{
+    margin-top: 50px;
+  }
+  .projects-grid{
+ 
+   
+  }
+  .project-card{
+  width: 80%;
+ margin-left: 40px;
+  }
+  .clients-grid{
+   margin-left: -42%;
+   margin-bottom: 50px;
+  
+  }
 }
