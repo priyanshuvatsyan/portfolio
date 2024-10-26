@@ -1,0 +1,16 @@
+.floating-image {
+    width: 50vh; /* Adjust image size */
+    animation: float 3s ease-in-out infinite; /* Apply floating animation */
+  /*   border: 2px solid black;
+    margin-left: -20%; */
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translatey(0);
+    }
+    50% {
+      transform: translatey(-20px); /* Change the value to control the floating height */
+    }
+  }
+  

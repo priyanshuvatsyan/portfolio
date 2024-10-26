@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+  }
+  html, body {
+    overflow-y: scroll;
+  }
+  
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: none;
+  }
+
+  
+  .background {
+    background: linear-gradient(9deg, rgba(211, 228, 235, 1) 2%, rgba(255, 255, 255, 1) 83%);
+    min-height: calc(100vh - 60px);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 15%  !important ;
+  }
+  
+  .text-content {
+    max-width: 500px;
+    margin-right: 20px;
+  }
+  
+  /* Style adjustments for h2, h3, and p */
+  .text-content h2 {
+    width: 40vw;
+    font-size: 4rem; /* Increase font size */
+    color: rgb(0, 28, 85); /* Set color */
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-content h3 {
+    font-size: 1.9rem; /* Increase font size */
+    color: rgb(0, 28, 85);
+    margin-bottom: 1rem;
+  }
+  
+  .text-content p {
+    font-size: 1.8rem; /* Increase font size */
+    color: rgb(0, 28, 85);
+    opacity: 0.7; /* Lower opacity */
+    line-height: 1.6;
+    width: 40vw;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the WhatsApp button */
+  .whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem; /* Increase button font size */
+    margin-top: 20px; /* Add space between paragraph and button */
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E;
+  }
+  
+  /* Floating image styling */
+  .image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 210px;
+    margin-top: -10%;
+  }
+  
+  .floating-image {
+    width: 250px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  /* src/components/Home.css */
+
+.section-heading {
+  font-size: 3.5rem  !important ;
+  color: rgb(0, 28, 85)  !important ;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.skills-image .skills-photo {
+  width: 30vw !important;
+  height: 55vh;
+  animation: float 3s ease-in-out infinite;
+}
+
+.skills-content {
+  max-width: 600px;
+  margin-left: 20px;
+
+}
+
+.skills-title {
+  font-size: 3.0rem !important ;
+  color: rgb(0, 28, 85) !important;
+  margin-bottom: 10px;
+}
+
+.tech-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  font-size: 4rem  !important ;
+  
+  margin-bottom: 35px;
+}
+
+.icon {
+  transition: transform 0.3s;
+
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+.etc-text {
+  font-size: 3rem;  /* Adjust font size if needed */
+  color: #888;  /* Adjust color as desired */
+  margin-left: 5px; /* Small space from icons if inline */
+}
+.tags{
+  font-size: 1.2rem;
+  margin-top: 2px;
+  color: rgba(0, 28, 85, 0.692);
+}
+/* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.bottom-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  color: rgb(0, 28, 85);
+  transition: color 0.3s;
+}
+
+.bottom-nav a:hover .bottom-icon {
+  color: #25D366;
+}
+
+.bottom-nav a:hover {
+  color: #25D366;
+}
+
+/* Base styles for desktop remain the same as above */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  .text-content,
+  .image-content {
+    margin: 0; /* Reset margin */
+    width: 100%; /* Full width for responsive layout */
+  }
+
+  .text-content h2 {
+    font-size: 3rem; /* Adjust font size */
+  }
+
+  .text-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1.4rem;
+    width: auto;
+  }
+
+  .whatsapp-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  .skills-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-image .skills-photo {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .tech-icons {
+    font-size: 3rem;
+  }
+
+  .tags {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (mobile phones, 576px and down) */
+@media (max-width: 576px) {
+  .content{
+    margin-top: 250% !important;
+   
+    
+  }
+  .text-content h2 {
+    font-size: 2rem;
+    margin-left: 25%;
+  }
+
+  .text-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+  }
+
+  .whatsapp-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .floating-image {
+    width: 180px;
+  }
+
+  .skills-image .skills-photo {
+    width: 90%;
+    height: auto;
+  }
+  .icon, .etc-text{
+    font-size: 2rem;
+  }
+
+  .bottom-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .bottom-nav a {
+    font-size: 0.9rem;
+  }
+
+  .bottom-icon {
+    font-size: 1rem;
+  }
+}

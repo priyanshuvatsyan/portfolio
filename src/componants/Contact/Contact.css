@@ -1,0 +1,68 @@
+
+  .contact-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    max-width: 1000px; /* Limit max width */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around the container */
+    margin-top: 10%;
+  }
+  
+  .image-side {
+    flex: 1; /* Take up half the space */
+  }
+  
+  .contact-image {
+    margin-left: -320px;
+    width: 150%; /* Responsive image */
+  
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .text-side {
+    flex: 1; /* Take up half the space */
+    color: rgb(0, 28, 85); /* Set text color */
+    padding-left: 20px; /* Space between image and text */
+  }
+  
+  .contact-title {
+    font-size: 4rem; /* Title size */
+    margin-bottom: 15px; /* Space below title */
+  }
+  
+  .availability-text {
+    font-size: 1.5rem; /* Availability text size */
+    margin-bottom: 20px; /* Space below availability text */
+  }
+  
+  .whatsapp-button,
+  .resume-button {
+    background-color: #25D366; /* WhatsApp color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Space between buttons */
+  }
+  .whatsapp-button,
+  .resume-button a{
+    color: aliceblue;
+  }
+  .whatsapp-button:hover,
+  .resume-button:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+  }
+  
+  .contact-header {
+    font-size: 2.5rem; /* Contact header size */
+    margin-top: 10%; /* Space above contact header */
+  }
+  
+  .contact-number {
+    font-size: 1.5rem; /* Contact number size */
+  }
+  .bottom-nav{
+    margin-top: 10%;
+  }

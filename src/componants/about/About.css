@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+  }
+  html, body {
+    overflow-y: scroll;
+  }
+  
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: none;
+  }
+
+  
+  .background {
+    background: linear-gradient(9deg, rgba(211, 228, 235, 1) 2%, rgba(255, 255, 255, 1) 83%);
+    min-height: calc(100vh - 60px);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.about-container {
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.image-side {
+    flex: 1;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.education-side {
+    flex: 1;
+    color: rgb(0, 28, 85);
+}
+
+.education-side h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.education-side p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+/* Wrapper for logos with flex alignment */
+.logos-container {
+    display: flex;
+    gap: 15px;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Style for the individual logos */
+  .logo {
+    width: 50px;  /* Adjust width as needed */
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  /* Add hover effect for logos */
+  .logo:hover {
+    transform: scale(1.1);
+  }
+.leetcode{
+    margin-left: 0px;
+}  
+.gfg{
+    margin-left: 20px;
+}
+.degree-section {
+    margin-top: 20px; /* Adds space above the degree section */
+    padding: 20px; /* Adds padding inside the degree section */
+    
+    color: white; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+   
+  }
+  
+  .degree-details {
+    background-color: #003366; /* Dark blue background */
+    display: flex; /* Align elements in a row */
+    justify-content: space-between; /* Space between the two headings */
+    margin-bottom: 15px; /* Space below the degree details */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    flex-direction: column;
+    width: 62vw;
+    height: 20vh;
+    padding: 20px 30px;
+  }
+  .details{
+   color: #003366;
+   background-color: #c8ddf3;
+   width: 60vw;
+   height: 40vh;
+  }
+  
+  .degree-section .degree {
+    font-size: 4rem !important;
+    color: #003366;
+    font-size: 2.5rem; /* Heading size for degree section */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .degree-section h2 {
+    font-size: 2rem; /* Size for the university name */
+  }
+  
+  .degree-section h3 {
+    font-size: 1.5rem; /* Size for the degree information */
+  }
+  
+  .degree-section p {
+    font-size: 1.2rem; /* Font size for the description */
+    margin-top: 10px; /* Space above the paragraph */
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bottom-nav a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .bottom-icon {
+    margin-right: 8px;
+    font-size: 1.3rem;
+    color: rgb(0, 28, 85);
+    transition: color 0.3s;
+  }
