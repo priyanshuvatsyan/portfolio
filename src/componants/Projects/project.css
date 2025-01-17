@@ -33,130 +33,107 @@ html {
   justify-content: center;
 }
 
-.project-container {
-  display: flex; /* Use flexbox to arrange children side by side */
-  justify-content: space-between; /* Space between the two divs */
-  align-items: center; /* Center items vertically */
-  margin-top: 10%; /* Change margin-top to be more responsive */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+.promContent{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.promZero {
+  text-align: center;
+  background: linear-gradient(9deg, rgb(194, 212, 240) 2%, rgba(255, 255, 255, 1) 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.promZero h2{
+ position: relative;
+ top: -5rem;
+ left: 2%;
+ width: 25rem;
+ color: #020074;
+}
+.promUp{
+  margin-top: 20%;
+ gap: 20px;
+  display: flex;
+}
+.promZeroRightOne{
+  text-align: center;
+  
+  background: linear-gradient(9deg, rgb(194, 212, 240) 2%, rgba(255, 255, 255, 1) 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.promZeroRightOne img {
+  width: 20vw;
 }
 
-.image-container {
-  flex: 1; /* Allow the image container to take up available space */
-  margin-right: 20px; /* Add some space between the two divs */
-  min-width: 250px; /* Ensure a minimum width */
+.promZeroRightOne h3 {
+  width: 20vw;
+  color: #020074;
 }
-
-.project-image {
-  width: 70%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.text-container {
-  flex: 1; /* Allow the text container to take up available space */
-  min-width: 250px; /* Ensure a minimum width */
-}
-
-.text-container h1 {
-  color: rgb(0, 28, 85);
-  font-size: 4rem;
-  margin-top: -12%;
-  margin-bottom: 20px;
-}
-
-.text-container p {
-  font-size: 1.1rem;
-  color: rgb(0, 28, 85);
-  opacity: 0.7; /* Lower opacity */
-}
-
-/* Projects Grid */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+.promZeroRight{
+  flex-direction: column;
+  display: flex;
   gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 40px;
 }
-
-.project-card {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.promZeroRightTwo{
+  color: #020074;
+  height: 30vh;
   text-align: center;
-  transition: transform 0.3s ease;
+  
+  background: linear-gradient(9deg, rgb(194, 212, 240) 2%, rgba(255, 255, 255, 1) 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
-
-.project-card:hover {
-  transform: translateY(-5px); /* Hover effect */
-}
-
-.project-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: rgb(0, 28, 85);
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.project-card a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-}
-
-.clients-heading {
-  font-size: 1.3rem;
-  color: rgb(0, 28, 85);
-  margin-top: 40px;
-  text-align: center;
-}
-
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+.promDown{
+  margin-top: 20px;
+  display: flex;
   gap: 20px;
-  width: 20%;
-  max-width: 1200px;
-  margin-top: 40px;
 }
-
-.client-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.promDownTwo{
+  margin-top: 70px;
+  align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 22vw;
+  background: linear-gradient(9deg, rgb(94, 149, 238) 2%, rgba(255, 255, 255, 1) 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.promDownTwo img{
+ 
+  width: 10vw;
+  border-radius: 20px;
+}
+.promDownTwo h3{
+  color: #020074;
+ 
+  width: 15vw;
+  font-size: 1.5rem;
+  top: 20px;
+  left: 25px;
+}
+.promDownThree{
+  background: linear-gradient(9deg, rgb(94, 149, 238) 2%, rgba(255, 255, 255, 1) 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.promDownThree h3{
+  color: #020074;
+ margin-left: 50px;
+  width: 7vw;
+  font-size: 1.5rem;
+}
+.promDownThree img{
+  width: 20vw;
 }
 
-.client-card h3 {
-  font-size: 1.3rem;
-  color: rgb(0, 28, 85);
-  margin-bottom: 10px;
-}
-
-.client-card p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.client-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: rgb(0, 28, 85);
-  text-decoration: none;
-  font-weight: bold;
-}
 
 .bottom-nav {
   display: flex;
@@ -167,6 +144,28 @@ html {
 
 .bottom-icon {
   margin-right: 5px;
+}
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  
+}
+.project-card{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25vw;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.project-card img{
+  width: 20vw;
+  height: 25vh;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -180,8 +179,13 @@ margin-right: 20px;
     margin-top: 50px;
   }
   .projects-grid{
- 
+    grid-template-columns: 1fr;
    
+  }
+  .project-card img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
   .project-card{
   width: 80%;
@@ -192,4 +196,84 @@ margin-right: 20px;
    margin-bottom: 50px;
   
   }
+  .promUp{
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+  }
+  .promZero{
+    margin-left: 0;
+    width: 100%;
+  }
+  .promZero img{
+    width: 100%;
+  }
+  
+  .promZero h2{
+   top: 0;
+   left: 0;
+   margin-left: 0;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  .promZeroRight{
+    margin-left: 0;
+    width: 100%;
+  }
+  .promZeroRight img{
+  height: 10vh;
+  width: 50vw;
+  }
+  .promZeroRight h3{
+    width: 100%;
+    margin-left: 0;
+     font-size: 1.4rem;
+     margin-top: 20px;
+  }
+  .promZeroRightTwo h3{
+    margin-top: 20px;
+  }
+  .promZeroRightTwo img{
+    height: 20vh;
+    width: 70vw; 
+  }
+  .promDown{
+   align-items: center;
+    flex-direction: column;
+  }
+  .promDownTwo{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .promDownTwo img{
+    
+    width: 60%;
+    flex-direction: column;
+  }
+  .promDownTwo h3{
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .promDownThree{
+    width: 80%;
+    flex-direction: column;
+  }
+  .promDownThree h3{
+    margin-top: 20px;
+    width: 100%;
+    
+  }
+  .promDownThree img{
+   
+    
+  }
+  .probImg{
+   
+    width: 90% !important;
+  }
+  
+  
 }

@@ -33,7 +33,9 @@ body {
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.image-side {
+.image-side img{
+ position: relative;
+ right: 70%;
   flex: 1;
   min-width: 300px; /* Minimum width for the image side */
 }
@@ -178,7 +180,10 @@ body {
     font-size: 2rem; /* Reduce font size */
   }
 }
+
 .contact-container {
+ 
+  text-align: center;
   display: flex;
   align-items: center;
   max-width: 1000px;
@@ -188,8 +193,10 @@ body {
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.image-side {
+.image-side img{
   flex: 1;
+  position: relative;
+  left:30%;
   min-width: 300px; /* Minimum width for the image side */
 }
 

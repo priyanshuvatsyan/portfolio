@@ -207,6 +207,9 @@
 .bottom-nav a:hover {
   color: #25D366;
 }
+.skills-image-mobile{
+  display: none;
+}
 
 /* Base styles for desktop remain the same as above */
 
@@ -283,10 +286,19 @@
 
 /* Small devices (mobile phones, 576px and down) */
 @media (max-width: 576px) {
+  .skills-title{
+    font-size: 2rem !important ; 
+  }
   .content{
     margin-top: 25% !important;
    
     
+  }
+  .tech-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
   }
   .text-content h2 {
     font-size: 2rem;
@@ -311,8 +323,10 @@
   }
 
   .skills-image .skills-photo {
-    width: 90%;
+    
+    width: 20rem !important;
     height: auto;
+   
   }
   .icon, .etc-text{
     font-size: 2rem;
@@ -322,13 +336,22 @@
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    display: flex !important;
+    max-width: 22rem;
+
   }
 
   .bottom-nav a {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   .bottom-icon {
-    font-size: 1rem;
+    font-size: .7rem !important;
+  }
+  .skills-image-pc{
+    display: none;
+  }
+  .skills-image-mobile{
+    display: flex  ; 
   }
 }

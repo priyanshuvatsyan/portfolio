@@ -1,77 +1,101 @@
 import './project.css';
 import projImg from './proj.webp';
-import {  FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import laptop from './laptop-removebg-preview.png';
+import globe from './globe-removebg-preview.png';
+import mern from './mern-removebg-preview.png';
+import error from './error.webp';
+import code from './react-removebg-preview.png';
+import jnt from './jnt s.png';
+import ps from './petspace.png';
+import gmc from './image.png';
+import has from './Screenshot (277).png';
+import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function Project() {
   return (
     <div className="background">
-      <div className="project-container">
-        <div className="image-container">
-          <img src={projImg} alt="Project" className="project-image" />
-        </div>
-        <div className="text-container">
-          <h1>Projects</h1>
-          <p>
-            My projects make use of a vast variety of the latest technology tools.
-            My best experience is to create full stack projects and deploy them to web applications.
-          </p>
-        </div>
+      <div className="promContent">
+        <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+          <div className="promUp">
+            <div className="promZero">
+              <img src={laptop} />
+              <h2>I prioritize client collaboration, fostering open communication</h2>
+            </div>
+            <div className="promZeroRight">
+              <div className="promZeroRightOne">
+                <h3>I'm very flexible with time zone communications</h3>
+                <img src={globe} alt="" />
+              </div>
+              <div className="promZeroRightTwo">
+                <h3>My Tech Stack</h3>
+                <img src={mern} alt="" />
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+          <div className="promDown">
+            <div className="promDownTwo">
+              <h3>Tech enthusiast with a passion for development.</h3>
+              <img src={error} alt="" />
+            </div>
+            <div className="promDownThree">
+              <h3>Self taught programmer</h3>
+              <img className='probImg' src={code} alt="" />
+            </div>
+          </div>
+        </motion.div>
       </div>
 
-      {/* Projects Showcase */}
-      <div className="projects-grid">
-        <div className="project-card">
-          <h3>Get My Contact</h3>
-          <p>A personal contact management app for storing and accessing contacts.</p>
-          <a href="https://github.com/priyanshuvatsyan/GetMyContacts">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Have a Seat</h3>
-          <p>A restaurant table booking system with QR code ordering.</p>
-          <a href="https://github.com/priyanshuvatsyan/Have-a-seat">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Facemask Detector</h3>
-          <p>An AI-powered app for detecting facemasks in real-time.</p>
-          <a href="#facemask-detector">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Code Editor</h3>
-          <p>A web-based code editor supporting multiple languages.</p>
-          <a href="https://github.com/priyanshuvatsyan/Code-editor-">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Hi Music</h3>
-          <p>A music streaming app with curated playlists and albums.</p>
-          <a href="https://github.com/priyanshuvatsyan/Hi-Music">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Hello Placement</h3>
-          <p>A platform for students to prepare for campus placements.</p>
-          <a href="https://github.com/priyanshuvatsyan/Hello-Placement">View Project</a>
-        </div>
-        <div className="project-card">
-          <h3>Text Craft</h3>
-          <p>A tool for crafting and formatting text with rich features.</p>
-          <a href="https://github.com/priyanshuvatsyan/TextCraft">View Project</a>
-        </div>
-      </div>
+      <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+       
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <div className="project-card">
+            <img src={jnt} alt="JN Traders" />
+            <h3>JN Traders</h3>
+            <p>An online marketplace for trading various goods, with features for easy ordering and delivery management.</p>
+            <div className="tech-stack">
+              
+            </div>
+            {/* <a href="/project/jn-traders" className="view-project">View Project</a>
+         */}  </div>
 
-      {/* Happy Clients Section */}
-      <h2 className="clients-heading">Happy Clients</h2>
-      <div className="clients-grid">
-        <div className="client-card">
-          <h3>JN Traders</h3>
-          <p>We developed their e-commerce site with a business management system to enhance their business operations.</p>
-        </div>
-      </div>
+         
+          <div className="project-card">
+            <img src={ps} alt="Petspace" />
+            <h3>Petspace</h3>
+            <p>A platform for pet lovers to find and adopt pets, with user-friendly features to explore available pets and shelters.</p>
+            </div>
 
-      <div className="bottom-nav">
+         
+          <div className="project-card">
+            <img src={gmc} alt="Get My Contacts" />
+            <h3>Get My Contacts</h3>
+            <p>An app to organize and sync contacts, enabling users to manage their personal network with ease.</p>
+          </div>
+
+          
+          <div className="project-card">
+            <img src={has} alt="Have A Seat" />
+            <h3>Have A Seat</h3>
+            <p>A restaurant management system allowing customers to view menus, order food, and pay bills directly from their phones.</p>
+            
+          
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+        <div className="bottom-nav">
           <a href="/"><FaHome className="bottom-icon" title="Home" /> Home</a>
           <a href="/about"><FaUser className="bottom-icon" title="About" /> About</a>
           <a href="/project"><FaProjectDiagram className="bottom-icon" title="Projects" /> Projects</a>
           <a href="/contact"><FaEnvelope className="bottom-icon" title="Contact" /> Contact</a>
         </div>
+      </motion.div>
     </div>
   );
 }
